@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header__inner">
+                    <a href="./index.html" class="site-header__logolink">
+                        <img class="site-header__logo" src="https://mybooking.uz/frontend/images/icons/logo.svg" alt="site logo">
+                    </a>
+                    <div class="site-header__info">
+                        <span class="site-header__currency">UZS</span>
+                        <img src="https://mybooking.uz/frontend/images/icons/uz_lang.svg" alt="language logo" class="site-header__lang">
+                        <button  class="site-header__adressadd">
+                            <a href="https://join.mybooking.uz/uz" class="site-header__adresaddlink" target="_blank">
+                                Turar joy qo'shish
+                            </a>
+                        </button>
+                        <a href="https://mybooking.uz/uz/login" class="site-header__enter" target="_blank">
+                            Kirish
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="site-main">
+            <div class="container">
+                <div class="site-main__about">
+                    <form class="site-main__form" autocomplete="off">
+                        <label for="city">Yo'nalishni kiriting</label>
+                        <input class="input-fath" type="text" placeholder="city..." name="city">
+                        <label for="date">Sanalar</label>
+                        <input class="input-fath" type="date" name="date">
+                        <button class="site-main__search" type="submit">Qidirish</button>
+                        <label for="room">Narxalar oralig'i</label>
+                        <input class="site-main__range" name="room" type="range">
+                        <div class="narx">
+                            <span class="narx__span">30 000 UZS</span><br>
+                            <span class="narx__span2">2 000 000 UZS</span>
+                        </div>
+                        <h3 class="site-main__filtertitle">Filtr</h3>
+                        <label for="filter">Yulduzlar soni </label>
+                        <div class="inputdiv">
+                            <input name="filter" type="checkbox">4 yulduz
+                        </div>
+                        <div class="inputdiv">
+                            <input name="filter" type="checkbox">3 yulduz
+                        </div>
+                        <div class="inputdiv">
+                            <input name="filter" type="checkbox">yulduz yo'q
+                        </div>
+                        <label for="distance">Shahardan uzoqligi</label>
+                        <div class="inputdiv">
+                            <input name="distance" type="checkbox">1 km dan kamroq
+                        </div>
+                        <div class="inputdiv">
+                            <input name="distance" type="checkbox">3 km dan kamroq
+                        </div>
+                        <div class="inputdiv">
+                            <input name="distance" type="checkbox">5 km dan kamroq
+                        </div>
+                        <label for="ad">Turar joy turi</label>
+                        <div class="inputdiv">
+                            <input name="ad" type="checkbox">Mehmonxona
+                        </div>
+                        <div class="inputdiv">
+                            <input name="ad" type="checkbox">Butik mehmonxona
+                        </div>
+                        <div class="inputdiv">
+                            <input name="ad" type="checkbox">Mehmon uyi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="ad" type="checkbox">Apartamentlar
+                        </div>
+                        <label for="qulaylik">Mehmonxona qulayliklari</label>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Wi-fi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Restoran 
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Cho'milish havzasi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Sauna
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Fitness markazi 
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Bolalar maydonchasi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Anjumanlar zali
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Lift 
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Oilaviy xonalar
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Transfer
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Tahsqi avtoturargoh
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Viza card orqali to'lov 
+                        </div>
+                        <div class="inputdiv">
+                            <input name="qulaylik" type="checkbox">Master card orqali to'lov
+                        </div>
+                        <hr>
+                        <label for="baho">Baho</label>
+                        <div class="inputdiv">
+                            <input name="baho" type="checkbox">Juda yaxshi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="baho" type="checkbox">Yaxshi
+                        </div>
+                        <div class="inputdiv">
+                            <input name="baho" type="checkbox">Baho yo'q
+                        </div>
+                    </form>
+                    <div class="site-main__index">
+                        <div class="site-main__header">
+                            <div class="site-main__info">
+                                <div class="site-main__logo">
+                                    53% mavjud
+                                </div>
+                                <div class="site-main__about1">
+                                    <h3 class="site-main__heading">
+                                        Toshkentdagi mehmonxonalar
+                                    </h3>
+                                    <p class="site-mian__abouttext">
+                                        Tanlangan sanalarda 125 mehmonxonadan 65 tasi mavjud.
+                                    </p>
+                                    <span class="site-main__aboutspan">
+                                        Shoshiling, tanlash uchun ko'plab turar joylar bor!
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="site-main__mapadress">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/map" class="site-main__map">Xaritada ko'rsatish</a>
+                            </div>
+                        </div>
+                        <ul class="site-main__menu">
+                            <li class="site-main__item">
+                                <a href="#" class="site-main__itemlink">Tavsiya etilgan</a>
+                            </li>
+                            <li class="site-main__item">
+                                <a href="#" class="site-main__itemlink">Baho</a>
+                            </li>
+                            <li class="site-main__item">
+                                <a href="#" class="site-main__itemlink">Yulduzlar soni</a>
+                            </li>
+                            <li class="site-main__item">
+                                <a href="#" class="site-main__itemlink">Narx</a>
+                            </li>
+                        </ul>
+
+                        <ul class="site-main__indexlist">
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/lumiere-hotel--spa?selected=4942-1776-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/_1643264178DkC8_325x244.jpg" alt="hotel image" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Lumiere Hotel & SPA
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 1 100 000</h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/oscar-boutique-hotel?selected=4248-1542-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/1432_1626171225kSwx_325x244.jpg" alt="hotel image" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Oscar Butik Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS  1 250 000</h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/huzur-hotel?selected=4811-1731-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/1597_1640600378nIjk_325x244.jpg" alt="hotel image" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Huzur Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 480 000 </h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/demure-hotel?selected=5208-1881-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/1622_16433546141yq1_325x244.jpg" alt="hotel image" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Darhan Butik Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 700 000</h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/diamond-tashkent-hotel-?selected=2196-754-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/840_1561124515PbS0_325x244.jpg" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Diamond Tashkent Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 700 000</h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <div class="site-main__login">
+                                <a href="https://mybooking.uz/uz/login" class="site-main__loginlink">Tizimga kiring</a>
+                                <p class="site-main__logotext">
+                                    va 20% gacha chegirmalarga ega bo'ling
+                                </p>
+                            </div>
+
+                            <li class="site-main__indexitem site-main__indexitem6">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/barhat-hotel?selected=5234-1889-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/1723_1652191572IeO2_325x244.jpg" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Barhat Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 700 000</h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/gelikon-vest?selected=5310-1917-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/_1652945250lv8v_325x244.jpg" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Gelikon Vest Mehmonxonasi
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 180 000 </h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+
+                            <li class="site-main__indexitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent/frankfort-hotel--spa?selected=4442-1597-2-1" target="_blank">
+                                    <img src="https://mybooking-file-storage.s3.us-east-2.amazonaws.com/uploads/hotel/images/_1631172197hpGg_325x244.jpg" class="site-main__indeximg">
+                                </a>
+                                <div class="site-main__indexabout">
+                                    <div class="site-main__like">
+                                        <h3 class="site-main__indextitle">
+                                            Frankfort Hotel & Spa
+                                        </h3>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxHQBpLPDLh4WY_Zco05QOf9crs39gDbZIxG-ww_PG9nIO1_kUDnO6tKH-dM4nNRSeTg&usqp=CAU" alt=" hotel image" class="site-main__likeimg">
+                                    </div>
+                                    <span class="site-main__karta">
+                                        Toshkent xaritada ko'rsatish
+                                    </span>
+                                    <div class="site-main__book">
+                                        <button class="site-main__passiv">Bekor qilish</button>
+                                        <button class="site-main__active">Nonushta</button>
+                                    </div>
+                                    <p class="site-main__booktext">
+                                        Kredit kartasiz bron qilish mumkin
+                                    </p>
+                                </div>
+                                <div class="site-main__price">
+                                    <span class="site-main__pricespan">
+                                        TripAdvisor Traveler Rating
+                                    </span>
+                                    <div class="site-main__pricediv">
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <span class="site-main__pricecircle"></span>
+                                        <p class="site-main__pricetext">10 sharh</p>
+                                    </div>
+                                    <h3 class="site-main__priceheading">Bitta katta</h3>
+                                    <div class="site-main__priceday">
+                                        <h3 class="site-main__pricetitle">UZS 180 000 </h3>
+                                        <span class="site-main__priceoneday">1 kecha</span>
+                                    </div>
+                                    <p class="site-main__pricetextsoliq">
+                                        Soliqlar va yig'imlar kiritilgan
+                                    </p>
+                                    <button class="site-main__rooms">Barcha xonalar</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="site-about">
+            <div class="container">
+                <h2 class="site-about__title">Toshkentdan mehmonxona bron qilish</h2>
+                <p class="site-about__text">
+                    Bu sahifada siz Toshkentning eng yaxshi mehmonxonalarini ko`rishingiz mumkin va o`zingiz uchun qulay variantni tanlashingiz mumkin. Mehmonxonadan shoshilinch bo`sh xona qidiryapsizmi? Yaxshi variant tanlash bilan bog`liq muammolar yuzaga keldimi? Bizning takliflarimiz bilan tanishib chiqing. Hozirni uzidayoq siz Toshkent shahridan yoki O`zbekistonning boshqa shaharlaridan mehmonxona bron qilishingiz mumkin.
+                    Biz o`ziga jalb qiladigan, jahon standartlariga javob beradigan, arzonroq va lyuks Toshkent mehmonxonalarini saralab oldik! O`zbekiston sizni o`z poytaxtida kutadi!
+                    Ish yuzasidan yoki sayohat uchun Toshkentga bormoqchimi siz? xonaning bir kunlik narxi, mehmonlarning qoldirgan sharxi, xonalarning rasmi, narxga kiritilgan xizmatlar va qo`shimcha to`lov evaziga ko`rsatiladigan xizmatlar ro`yxati- bularning barchasi Mybooking.uz da.
+                    Toshkentga biletni qo`lga kiritganingiz bilanoq u yerda tunash uchun joy tanlashingizni tavsiya etamiz. Muddatdan oldin xona bron qilish kelgusida xonaga joylashish bilan yuzaga keladigan qiyinchiliklarni hamda shahar to`grisida yomon ta`surotlar qoldiradigan muammolarni hal qiladi.
+                    Toshkentdagi mehmonxonalar, bizning resursdagi narxlar to`la oqlangan va hech qanday ustamaga ega emas. Xonalarni mehmonxona qo`ygan narx bo`yicha mehmonxona shaxsiy saytiga kirmasdan turib shu yerda bron qiling. Toshkent - tanlang, tejang, ortiqcha to`lamang! Sizga endi internetda Toshkent mehmonxonalarini qidirish kerak emas! Arzon xonalar va mashhur lyuks klassdagi apartamentlar sizning tashrifingizni kutyapti.
+                </p>
+            </div>
+        </section>
+
+        
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__about">
+                    <div class="site-footer__xizmatlar">
+                        <span class="site-footer__span">xizmatlar:</span>
+                        <a href="https://b2b.mybooking.uz/uz" class="site-footer__link" target="_blank">
+                            Korporativ mijozlar uchun
+                        </a>
+                        <a href="https://mybooking.uz/uz/explore-cities" class="site-footer__link" target="_blank">
+                            O'zbekistonni kashf eting
+                        </a>
+                        <a href="https://mybooking.uz/uz/hotels/tashkent" class="site-footer__link" target="_blank">
+                            Qoidalar va shartlar
+                        </a>
+                    </div>
+
+                    <div class="site-footer__city">
+                        <h3 class="site-footer__citytitle">Shahar:</h3>
+                        <ul class="site-footer__citymenu">
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/tashkent" class="site-footer__citylink" target="_blank">Toshkent</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/samarkand" class="site-footer__citylink" target="_blank">Samarqand</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/bukhara" class="site-footer__citylink" target="_blank">Buxoro</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/khiva" class="site-footer__citylink" target="_blank">Xiva</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/gizhduvan" class="site-footer__citylink" target="_blank">G'ijduvon</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/urgench" class="site-footer__citylink" target="_blank">Urganch</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/fergana" class="site-footer__citylink" target="_blank">Farg'ona</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/margilan" class="site-footer__citylink" target="_blank">Marg'ilon</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/termez" class="site-footer__citylink" target="_blank">Termiz</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/shaxrisabz" class="site-footer__citylink" target="_blank">Shahrisabz </a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/kokand" class="site-footer__citylink" target="_blank">Qo'qon </a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/namangan" class="site-footer__citylink" target="_blank">Namangan </a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/navoi" class="site-footer__citylink" target="_blank">Navoiy</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/karshi" class="site-footer__citylink" target="_blank">Qarshi </a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/jizzakh" class="site-footer__citylink" target="_blank">Jizzax</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/andijan" class="site-footer__citylink" target="_blank">Andijon</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/nukus" class="site-footer__citylink" target="_blank">Nukus</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/mubarek" class="site-footer__citylink" target="_blank">Muborak</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/chirchik" class="site-footer__citylink" target="_blank">Chirchiq</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/zarafshan" class="site-footer__citylink" target="_blank">Zarafshon</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/gulistan" class="site-footer__citylink" target="_blank">Guliston</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/denau" class="site-footer__citylink" target="_blank">Denov</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/bekabad" class="site-footer__citylink" target="_blank">Bekobod</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/nurata" class="site-footer__citylink" target="_blank">Nurota</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/chust" class="site-footer__citylink" target="_blank">Chust</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/kungrad" class="site-footer__citylink" target="_blank">Qo'ng'irot</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/shargun" class="site-footer__citylink" target="_blank">Sharg'un</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/kitab" class="site-footer__citylink" target="_blank">Kitob</a>
+                            </li>
+                            <li class="site-footer__cityitem">
+                                <a href="https://mybooking.uz/uz/hotels/kattakurgan" class="site-footer__citylink" target="_blank">Kattaqo'rg'on</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sivyaz">
+                        <h3 class="sivyaz__title">Aloqa</h3>
+                        <a href="mailto:info@mybooking.uz" class="sivyaz__email">
+                            info@mybooking.uz
+                        </a>
+                        <a href="tel:+998781508500" class="sivyaz__tel">
+                            +998 78 150 85 00
+                        </a>
+                        <p class="sivyaz__text">O'zb, Buxoro, M. Ambar 115</p>
+                    </div>
+                </div>
+            </div>
+            <span class="line"></span>
+
+            <div class="container">
+                <div class="connect">
+                    
+                    <div class="connectimgdiv">
+                        <h3 class="connect__title">Ijtimoiy tarmoqlar</h3>
+                        <a href="https://www.facebook.com/mybooking.uz">
+                            <img src="https://mybooking.uz/frontend/images/icons/facebook.png" alt="facebook image" class="connectimg">
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/?next=/mybookinguz/">
+                            <img src="https://mybooking.uz/frontend/images/icons/instagram.svg" alt="instagram image" class="connectimg">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC_dxGfkNBy9hg-uXfSUtZEQ">
+                            <img src="https://mybooking.uz/frontend/images/icons/youtube-play.png" alt="you tube image" class="connectimg">
+                        </a>
+                        <a href="https://vk.com/mybookinguz">
+                            <img src="https://mybooking.uz/frontend/images/icons/vk.png" alt="you tube image" class="connectimg">
+                        </a>
+                        <a href="https://twitter.com/MyBooking_uz">
+                            <img src="https://mybooking.uz/frontend/images/icons/twitter.png" alt="you tube image" class="connectimg">
+                        </a>
+                    </div>
+
+                    <a href="https://join.mybooking.uz/uz" class="connect__adress" target="_blank">
+                        Turar joy qoshish
+                    </a>
+
+                    <a href="https://hotel.mybooking.uz/uz/login" class="connect__extranet" target="_blank">
+                        Extranet-ga kiring
+                    </a>
+
+                    <div class="connect__prog">
+                        <h3 class="connect__progtitle">MObil ilovalar</h3>
+                        <a href="https://play.google.com/store/apps/details?id=com.mybookinguz&hl=uz" class="connect__proglink" target="_blank">
+                            <img src="https://mybooking.uz/frontend/images/icons/android-logo.svg" alt="android iamge" class="connect__progimg">
+                        </a>
+
+                        <a href="https://apps.apple.com/uz/app/mybooking/id1439242487" class="connect__proglink" target="_blank">
+                            <img src="https://mybooking.uz/frontend/images/icons/apple.svg" alt="android iamge" class="connect__progimg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/main.js"></script>
+
+</body>
+</html>
